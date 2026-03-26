@@ -1077,6 +1077,148 @@ footer p {
 }
 
 /* ============================================
+   Features Page
+   ============================================ */
+.feature-detail-section {
+  margin-bottom: 56px;
+}
+
+.feature-detail-section h2 {
+  font-size: 1.5rem;
+  margin-bottom: 12px;
+}
+
+.feature-detail-section > p {
+  font-size: 0.95rem;
+  color: var(--color-text-secondary);
+  line-height: 1.75;
+  margin-bottom: 16px;
+}
+
+.feature-detail-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.feature-detail-list li {
+  font-size: 0.9rem;
+  color: var(--color-text-secondary);
+  padding: 6px 0;
+  padding-left: 24px;
+  position: relative;
+  line-height: 1.6;
+}
+
+.feature-detail-list li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 11px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--color-teal-subtle);
+  border: 2px solid var(--color-teal);
+}
+
+/* ============================================
+   Integrations Page
+   ============================================ */
+.integration-works-with {
+  max-width: var(--max-width-prose);
+  margin: 0 auto;
+  padding: 0 32px 80px;
+}
+
+.integration-works-with h2 {
+  font-size: 1.9rem;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  margin-bottom: 12px;
+}
+
+.integration-works-with-subtitle {
+  font-size: 1rem;
+  color: var(--color-text-secondary);
+  line-height: 1.7;
+  margin-bottom: 40px;
+}
+
+.integration-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.integration-card {
+  border: 1px solid var(--color-border);
+  border-radius: 14px;
+  padding: 28px 24px;
+  background: var(--color-bg);
+  transition: border-color var(--transition-fast);
+}
+
+.integration-card:hover {
+  border-color: var(--color-teal);
+}
+
+.integration-card h4 {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: var(--color-text);
+}
+
+.integration-card p {
+  font-size: 0.95rem;
+  color: var(--color-text-secondary);
+  line-height: 1.7;
+}
+
+.integration-card-primary {
+  border-color: var(--color-teal);
+  background: rgba(15, 118, 110, 0.02);
+  padding: 32px 28px;
+}
+
+.integration-card-primary h4 {
+  font-size: 1.1rem;
+  color: var(--color-teal);
+}
+
+.integration-compact-group {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.integration-card-compact {
+  border: 1px solid var(--color-border);
+  border-radius: 12px;
+  padding: 20px;
+  background: var(--color-bg);
+  transition: border-color var(--transition-fast);
+}
+
+.integration-card-compact:hover {
+  border-color: var(--color-teal-light);
+}
+
+.integration-card-compact h4 {
+  font-size: 0.9rem;
+  font-weight: 600;
+  margin-bottom: 6px;
+  color: var(--color-text);
+}
+
+.integration-card-compact p {
+  font-size: 0.85rem;
+  color: var(--color-text-secondary);
+  line-height: 1.6;
+}
+
+/* ============================================
    Responsive Design
    ============================================ */
 
@@ -1170,6 +1312,14 @@ footer p {
     padding: 80px 24px;
   }
 
+  .integration-works-with {
+    padding: 0 24px 80px;
+  }
+
+  .integration-compact-group {
+    grid-template-columns: 1fr;
+  }
+
   .final-cta {
     padding: 80px 24px;
   }
@@ -1249,6 +1399,10 @@ footer p {
   .mcp-capabilities,
   .final-cta {
     padding: 60px 20px;
+  }
+
+  .integration-works-with {
+    padding: 0 20px 60px;
   }
 
   .page-header,
