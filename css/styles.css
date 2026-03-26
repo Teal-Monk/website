@@ -1079,26 +1079,75 @@ footer p {
 /* ============================================
    Features Page
    ============================================ */
-.feature-detail-section {
-  margin-bottom: 56px;
+.features-group {
+  margin-bottom: 64px;
+  padding-bottom: 64px;
+  border-bottom: 1px solid var(--color-border);
 }
 
-.feature-detail-section h2 {
+.features-group:last-of-type {
+  border-bottom: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.features-group h2 {
   font-size: 1.5rem;
-  margin-bottom: 12px;
+  margin-bottom: 16px;
 }
 
-.feature-detail-section > p {
+.features-group > p {
   font-size: 0.95rem;
   color: var(--color-text-secondary);
   line-height: 1.75;
-  margin-bottom: 16px;
+  margin-bottom: 4px;
+}
+
+.features-item {
+  margin-top: 32px;
+}
+
+.features-item h3 {
+  font-size: 1.05rem;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+.features-item p {
+  font-size: 0.95rem;
+  color: var(--color-text-secondary);
+  line-height: 1.75;
+}
+
+.features-callout {
+  border: 1px solid var(--color-border);
+  border-radius: 14px;
+  padding: 28px 24px;
+  margin-top: 64px;
+  margin-bottom: 0;
+  transition: border-color var(--transition-fast);
+}
+
+.features-callout:hover {
+  border-color: var(--color-teal);
+}
+
+.features-callout h3 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.features-callout p {
+  font-size: 0.95rem;
+  color: var(--color-text-secondary);
+  line-height: 1.7;
 }
 
 .feature-detail-list {
   list-style: none;
   padding: 0;
-  margin: 0;
+  margin: 12px 0 0 0;
 }
 
 .feature-detail-list li {
