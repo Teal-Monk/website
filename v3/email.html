@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Popy Email — an inbox that knows your whole history. Built on everything Popy already knows about your work, meetings, and people. Early access, on macOS.">
+<meta name="author" content="Popy">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Popy Email — an inbox that knows your whole history">
+<meta property="og:description" content="Summarized threads and replies drafted in your context. Early access, rolling out a few at a time.">
+<meta property="og:url" content="https://getpopy.com/email">
+<link rel="icon" type="image/png" href="/public/images/favicon.png">
+<title>Popy — Email</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/css/v3.css">
+<style>
+  .tag{display:inline-flex;align-items:center;gap:7px;background:var(--accent-bg-soft);color:var(--accent);font-size:12px;font-weight:700;letter-spacing:.4px;text-transform:uppercase;padding:6px 12px;border-radius:999px}
+  .sub{font-size:clamp(16px,1.9vw,19px);color:var(--text-secondary);margin-top:16px;max-width:430px;line-height:1.55}
+  @media(max-width:860px){.sub{margin-left:auto;margin-right:auto}}
+  .mailrow{display:flex;gap:11px;padding:11px 2px;border-bottom:1px solid var(--border-soft)}
+  .mav{width:30px;height:30px;border-radius:50%;background:#E7B85C;color:#7a5a14;font-weight:700;font-size:12px;display:flex;align-items:center;justify-content:center;flex:none}
+  .mfrom{font-weight:700;font-size:13.5px;color:var(--ink)}
+  .msub{font-size:13px;color:var(--text-primary);margin-top:1px}
+  .mprev{font-size:12px;color:var(--text-muted);margin-top:2px;line-height:1.4}
+  .mtime{font-size:11.5px;color:var(--text-muted);margin-left:auto;flex:none}
+  .triage{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:34px}
+  .tcard{background:#fff;border:1px solid var(--border);border-radius:var(--radius-lg);padding:22px 20px;text-align:left;box-shadow:var(--frame-shadow-soft)}
+  .tcard .tt{font-weight:700;color:var(--ink);font-size:16px;display:flex;align-items:center;gap:8px}
+  .tcard .tt .n{background:var(--accent);color:#fff;font-size:11px;border-radius:999px;padding:1px 7px}
+  .tcard p{font-size:13.5px;color:var(--text-secondary);margin-top:8px;line-height:1.55}
+  @media(max-width:760px){.triage{grid-template-columns:1fr}}
+  .cfield{display:flex;gap:10px;font-size:13px;padding:9px 0;border-bottom:1px solid var(--border-soft)}
+  .cfield .lab{color:var(--text-muted);width:52px;flex:none}.cfield .val{color:var(--ink);font-weight:500}
+  .cbody{font-size:13.5px;color:var(--text-primary);line-height:1.65;padding:13px 0 4px}
+  .ctxt{background:var(--accent-bg-very-soft);border:1px solid var(--accent-bg-soft);border-radius:var(--radius-md);padding:13px 15px;margin-top:6px}
+  .ctxt .ch{display:flex;align-items:center;gap:7px;font-size:12px;font-weight:700;color:var(--accent);text-transform:uppercase;letter-spacing:.4px;margin-bottom:9px}
+  .ctxt .ci{display:flex;gap:8px;font-size:12.5px;color:var(--text-primary);padding:3px 0;line-height:1.45}
+  .ctxt .ci .d{width:5px;height:5px;border-radius:50%;background:var(--accent);margin-top:7px;flex:none}
+  .band{background:var(--cool);border-top:1px solid rgba(15,118,110,.07);border-bottom:1px solid rgba(15,118,110,.07);padding:84px 0;text-align:center}
+  .band h2{margin-bottom:12px}.band p{color:var(--text-secondary);font-size:15.5px;max-width:560px;margin:0 auto}
+  .accessbox{display:flex;gap:10px;max-width:440px;margin:30px auto 12px;flex-wrap:wrap;justify-content:center}
+  .accessbox input{flex:1;min-width:220px;border:1px solid var(--border);border-radius:var(--radius-md);padding:13px 15px;font-family:inherit;font-size:15px;color:var(--ink);background:#fff}
+  .accessbox input:focus{outline:none;border-color:var(--accent)}
+</style></head>
+<body>
+<nav><div class="nav-in"><a href="index.html" class="brand"><span class="mk"></span>Popy</a>
+  <div class="nav-links"><a href="email.html" class="on">Email</a><a href="pricing.html">Pricing</a><a href="privacy.html">Privacy</a><a href="https://pub-a49d8152e2ad4e1480829172abb5d7a9.r2.dev/releases/v0.1.9/Popy_0.1.9_aarch64.dmg" class="btn btn-primary">Download for Mac</a></div></div></nav>
+
+<header class="hero"><div class="wrap"><div class="hero-grid">
+  <div class="copy reveal">
+    <span class="tag">Early access</span>
+    <h1>An inbox that knows your whole history.</h1>
+    <p class="sub">The email client we're proudest of — built on everything Popy already knows about your work, your meetings, and your people.</p>
+    <div class="cta-row"><div class="cta-line">
+      <a href="#access" class="btn btn-primary btn-lg">Request early access</a>
+      <a href="#how" class="btn btn-ghost btn-lg">See how it works</a>
+    </div><div class="fineprint">Included in Popy · macOS · rolling out a few at a time.</div></div>
+  </div>
+  <div class="float reveal"><div class="frag"><div class="frag-pad">
+    <div class="tabs"><span class="tab on">Now <span class="n">1</span></span><span class="tab">Awaiting</span><span class="tab">Threads</span></div>
+    <div class="mailrow"><span class="mav">PS</span><div><div class="mfrom">Pope Sixtus</div><div class="msub">Notes on the ceiling</div><div class="mprev">A few thoughts after seeing the drawings — and a question about the timeline…</div></div><span class="mtime">now</span></div>
+    <div class="ai"><div class="ai-h"><svg class="ic spark" viewBox="0 0 24 24" width="14" height="14"><path d="M12 3l1.8 4.6L18.5 9l-4.7 1.4L12 15l-1.8-4.6L5.5 9l4.7-1.4z" stroke-linejoin="round"/></svg> Thread summary</div>
+      <ul><li>Sixtus wants the additional prophets after all.</li><li>He's asking when it'll be done — and what it adds to the cost.</li><li>Needs a reply before the Ceiling Review.</li></ul>
+      <div class="replies"><span class="reply">Confirm figures, send revised quote</span><span class="reply">Confirm, hold the price</span><span class="reply">Ask to discuss in person</span></div>
+    </div>
+  </div></div>
+  <div class="marker" style="top:40px;right:-6px"><span class="lbl">Summarized &amp; drafted in your context</span><span class="leader"></span><span class="nub"></span></div>
+  </div>
+</div></div></header>
+
+<!-- TRIAGE -->
+<section class="feat" id="how" style="text-align:center;padding-bottom:40px"><div class="wrap">
+  <div class="eyebrow reveal">Triage that actually triages</div>
+  <h2 class="reveal">Three tabs. Nothing else to manage.</h2>
+  <div class="triage">
+    <div class="tcard reveal"><div class="tt">Now <span class="n">1</span></div><p>The handful of things that genuinely need you today. Everything else stays out of the way until it doesn't.</p></div>
+    <div class="tcard reveal"><div class="tt">Awaiting</div><p>The replies you're still waiting on, tracked for you — so the marble supplier who went quiet doesn't slip.</p></div>
+    <div class="tcard reveal"><div class="tt">Threads</div><p>Everything else, quietly sorted and summarized. Newsletters, updates, the long back-and-forths — there when you want them.</p></div>
+  </div>
+</div></section>
+
+<!-- CONTEXT (the wedge) -->
+<section class="feat"><div class="wrap"><div class="feat-grid">
+  <div class="copy reveal">
+    <div class="eyebrow">The difference</div>
+    <h2>It already knows who you're writing to.</h2>
+    <p>Because Popy holds your meetings, notes, and people, the inbox writes with all of it. Open a reply and it's already pulled the last conversation, the open commitment, the thing they sent you. No other inbox can do this, because no other inbox has the rest of your work.</p>
+  </div>
+  <div class="stage reveal"><div class="frag"><div class="frag-pad">
+    <div class="cfield"><span class="lab">To</span><span class="val">Pope Sixtus</span></div>
+    <div class="cfield"><span class="lab">Re</span><span class="val">Notes on the ceiling</span></div>
+    <div class="cbody">Your Holiness, the four additional prophets are no trouble. Given the extra figures, I'd propose autumn for completion, and I'll send a revised quote alongside this…</div>
+    <div class="ctxt"><div class="ch"><svg class="ic spark" viewBox="0 0 24 24" width="13" height="13"><path d="M12 3l1.8 4.6L18.5 9l-4.7 1.4L12 15l-1.8-4.6L5.5 9l4.7-1.4z" stroke-linejoin="round"/></svg> Drawing on what Popy knows</div>
+      <div class="ci"><span class="d"></span> Ceiling Review, this morning — agreed to add four prophets</div>
+      <div class="ci"><span class="d"></span> Open: confirm the additional fee</div>
+      <div class="ci"><span class="d"></span> Sixtus prefers things short, and a firm date</div>
+    </div>
+  </div></div>
+  <div class="marker" style="bottom:74px;left:-6px"><span class="nub"></span><span class="leader"></span><span class="lbl">Pulled from your graph</span></div>
+  </div>
+</div></div></section>
+
+<!-- ACCESS -->
+<div class="band" id="access"><div class="wrap">
+  <h2 class="reveal">Why you have to ask.</h2>
+  <p class="reveal">Email touches your most sensitive data, so we're rolling it out slowly and carefully — a few people at a time, while we earn the right to handle it. Leave your address and we'll be in touch as spots open.</p>
+  <div class="accessbox reveal" style="justify-content:center"><a href="mailto:team@getpopy.com?subject=Popy%20Email%20early%20access&body=I'd%20like%20early%20access%20to%20Popy%20Email." class="btn btn-primary btn-lg">Request early access →</a></div>
+  <div class="fineprint reveal">No spam. Just an invite when it's your turn.</div>
+</div></div>
+
+<footer><div class="wrap foot">
+  <a href="index.html" class="brand"><span class="mk"></span>Popy</a>
+  <div class="links">
+    <div class="col"><h5>Product</h5><a href="email.html">Email</a><a href="pricing.html">Pricing</a><a href="https://pub-a49d8152e2ad4e1480829172abb5d7a9.r2.dev/releases/v0.1.9/Popy_0.1.9_aarch64.dmg">Download</a></div>
+    <div class="col"><h5>Trust</h5><a href="privacy.html">Privacy</a><a href="privacy.html#security">Security</a><a href="manifesto.html">Manifesto</a></div>
+    <div class="col"><h5>Support</h5><a href="support.html">Help &amp; support</a><a href="https://tally.so/r/VLQByv" target="_blank" rel="noopener">Contact</a><a href="blog.html">Blog</a></div>
+    <div class="col"><h5>Legal</h5><a href="tos.html">Terms</a><a href="privacy.html">Privacy policy</a></div>
+  </div>
+  <div class="copyright">© 2026 Popy. Local-first, on your Mac.</div>
+</div></footer>
+<script>const io=new IntersectionObserver((es)=>{es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:.12});document.querySelectorAll('.reveal').forEach(el=>io.observe(el));</script>
+</body></html>

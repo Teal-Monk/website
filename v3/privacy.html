@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Popy privacy — local-first, the honest kind. Your data lives on your Mac, never trains AI, and you decide what leaves. Read the full privacy policy inline.">
+<meta name="author" content="Popy">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Popy — Privacy">
+<meta property="og:description" content="Yours. On your Mac. Local-first and private by design.">
+<meta property="og:url" content="https://getpopy.com/privacy">
+<link rel="icon" type="image/png" href="/public/images/favicon.png">
+<title>Popy — Privacy</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/css/v3.css">
+<style>
+  .how{background:var(--cool);border-top:1px solid rgba(15,118,110,.07);border-bottom:1px solid rgba(15,118,110,.07);padding:84px 0;margin-top:80px}
+  .how h2{font-weight:700;font-size:clamp(26px,3.4vw,36px);color:var(--ink);letter-spacing:-.6px;text-align:center;margin-bottom:10px}
+  .how .lead{text-align:center;color:var(--text-secondary);font-size:15.5px;max-width:520px;margin:0 auto 40px}
+  .steps{max-width:680px;margin:0 auto;display:flex;flex-direction:column;gap:4px}
+  .step{display:flex;gap:16px;padding:18px 0;border-bottom:1px solid rgba(15,118,110,.1)}
+  .step:last-child{border-bottom:none}
+  .step .num{width:30px;height:30px;border-radius:50%;background:#fff;border:1px solid var(--accent-bg-soft);color:var(--accent);font-weight:700;font-size:14px;display:flex;align-items:center;justify-content:center;flex:none}
+  .step h4{font-size:15.5px;font-weight:700;color:var(--ink);margin-bottom:4px}
+  .step p{font-size:13.5px;color:var(--text-secondary);line-height:1.6}
+  .control{padding:84px 0;text-align:center}
+  .control h2{font-weight:700;font-size:clamp(26px,3.4vw,36px);color:var(--ink);letter-spacing:-.6px;margin-bottom:10px}
+  .control .lead{color:var(--text-secondary);font-size:15.5px;max-width:520px;margin:0 auto 36px}
+  .ctrls{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;max-width:840px;margin:0 auto;text-align:left}
+  .ctrl{background:#fff;border:1px solid var(--border);border-radius:var(--radius-lg);padding:22px 20px;box-shadow:var(--frame-shadow-soft)}
+  .ctrl h4{font-size:15px;font-weight:700;color:var(--ink);margin-bottom:6px}
+  .ctrl p{font-size:13px;color:var(--text-secondary);line-height:1.55}
+  @media(max-width:760px){.ctrls{grid-template-columns:1fr}}
+</style></head>
+<body>
+<nav><div class="nav-in"><a href="index.html" class="brand"><span class="mk"></span>Popy</a>
+  <div class="nav-links"><a href="email.html">Email</a><a href="pricing.html">Pricing</a><a href="privacy.html" class="on">Privacy</a><a href="https://pub-a49d8152e2ad4e1480829172abb5d7a9.r2.dev/releases/v0.1.9/Popy_0.1.9_aarch64.dmg" class="btn btn-primary">Download for Mac</a></div></div></nav>
+
+<!-- HERO + guarantees -->
+<section class="page-hero" id="security"><div class="wrap">
+  <div class="eyebrow reveal">Private by design</div>
+  <h1 class="reveal">Yours. On your Mac.</h1>
+  <p class="reveal">Popy is local-first — the honest kind, not the marketing kind. Here's exactly what that means.</p>
+  <div class="sum-grid">
+    <div class="sum-card reveal">
+      <div class="pico"><svg class="ic" viewBox="0 0 24 24" width="20" height="20"><rect x="4" y="4" width="16" height="16" rx="2"/><path d="M8 9h8M8 13h5"/></svg></div>
+      <h4>Stored on your device</h4>
+      <p>Your notes, meetings, reads and contacts live in a database on your own Mac. That's the source of truth — not a copy on someone else's cloud.</p>
+    </div>
+    <div class="sum-card reveal">
+      <div class="pico"><svg class="ic" viewBox="0 0 24 24" width="20" height="20"><path d="M3 12a9 9 0 0118 0M3 12a9 9 0 0018 0"/><path d="M3 12h18"/></svg></div>
+      <h4>Nothing stored on our servers</h4>
+      <p>We don't keep your content. There's no archive of your work sitting on our side waiting to be breached, subpoenaed, or sold.</p>
+    </div>
+    <div class="sum-card reveal">
+      <div class="pico"><svg class="ic" viewBox="0 0 24 24" width="20" height="20"><path d="M12 3l7 4v5c0 4-3 7-7 8-4-1-7-4-7-8V7z"/></svg></div>
+      <h4>Never used to train AI</h4>
+      <p>Your content is never used to train models — not by us, and not by the providers who power Popy's AI features. That's in our terms, not just our marketing.</p>
+    </div>
+    <div class="sum-card reveal">
+      <div class="pico"><svg class="ic" viewBox="0 0 24 24" width="20" height="20"><rect x="5" y="11" width="14" height="9" rx="2"/><path d="M8 11V8a4 4 0 018 0v3"/></svg></div>
+      <h4>Encrypted on your machine</h4>
+      <p>The local database is encrypted, so even on your own device, what's inside stays unreadable to anything that shouldn't have it.</p>
+    </div>
+  </div>
+</div></section>
+
+<!-- HOW -->
+<div class="how"><div class="wrap">
+  <h2 class="reveal">Where your data actually goes.</h2>
+  <p class="lead reveal">The honest version, including the part most "private" apps leave out.</p>
+  <div class="steps">
+    <div class="step reveal"><span class="num">1</span><div><h4>It lives with you</h4><p>Everything you capture is written to the encrypted database on your Mac. Day to day, your data simply doesn't leave.</p></div></div>
+    <div class="step reveal"><span class="num">2</span><div><h4>AI features process, they don't keep</h4><p>When you transcribe a meeting or generate a summary, that specific content is sent to our model providers to do the work, then it's gone. It isn't retained, and it isn't used for training. We send the minimum needed and nothing more.</p></div></div>
+    <div class="step reveal"><span class="num">3</span><div><h4>You decide what leaves</h4><p>Sharing your context with an outside AI over MCP only happens when you switch it on — and you control exactly what it can see, item by item.</p></div></div>
+  </div>
+</div></div>
+
+<!-- CONTROL -->
+<div class="control"><div class="wrap">
+  <h2 class="reveal">Your data, your call.</h2>
+  <p class="lead reveal">Local-first isn't only about where data sits. It's about who's in charge of it.</p>
+  <div class="ctrls">
+    <div class="ctrl reveal"><h4>Export it</h4><p>Your data is yours to take. Export it in open formats, whenever you want, no questions asked.</p></div>
+    <div class="ctrl reveal"><h4>Delete it</h4><p>Delete anything, or everything. When it's gone from your Mac, it's gone — there's no shadow copy to chase down.</p></div>
+    <div class="ctrl reveal"><h4>Grant access, line by line</h4><p>Connecting an AI like Claude or ChatGPT? You choose exactly what it can read and write, and you can revoke it any time.</p></div>
+  </div>
+</div></div>
+
+<!-- CLOSING + full policy -->
+<section class="closing"><div class="wrap">
+  <p class="reveal">We built Popy to hold the most personal record of your work there is. The only way that's acceptable is if it's genuinely yours. So it is.</p>
+  <a href="https://pub-a49d8152e2ad4e1480829172abb5d7a9.r2.dev/releases/v0.1.9/Popy_0.1.9_aarch64.dmg" class="btn btn-primary btn-lg reveal">Download for Mac</a>
+
+  <details class="fulldoc" id="full-policy">
+    <summary>Read the full privacy policy</summary>
+    <div class="doc-meta">Privacy Policy · Version 2.0</div>
+    <div class="prose">
+      <h2>The short version</h2>
+      <p>Your data is stored on your device. We don't keep copies of your notes, articles, meetings, or anything you save. Some features — like syncing, digests, and browser extension saves — require data to pass through our servers temporarily to work, but we don't read it, sell it, or use it for anything other than delivering that feature. When we use AI for transcription or summaries, that data is processed and discarded — never used to train models. We track basic usage stats (like how many minutes of audio were transcribed) to understand costs and usage patterns, but we never see the actual content.</p>
+      <p>That's the gist. The rest of this document explains exactly how it all works.</p>
+
+      <h2>1. Who we are</h2>
+      <p>We're the Popy team — a small group of builders who miss some of the iconic apps like Pocket and Wanderlust, and who are strong believers in AI making humans smarter and more efficient, not yet doing things for them (might get there soon).</p>
+      <p>If you have questions about this policy, contact us at: <a href="mailto:team@getpopy.com">team@getpopy.com</a></p>
+
+      <h2>2. What data we collect</h2>
+      <h3>2.1 Data you create in Popy</h3>
+      <p>This includes:</p>
+      <ul>
+        <li>Notes you write</li>
+        <li>Articles you save</li>
+        <li>Tools and resources you bookmark</li>
+        <li>Meeting recordings and transcripts</li>
+        <li>Voice memos and transcriptions</li>
+        <li>Tasks you create</li>
+        <li>Contacts and people you @mention</li>
+        <li>Tags, links, and connections between items</li>
+      </ul>
+      <p><strong>Where this data lives:</strong> On your device. We do not maintain copies of this data on our servers, and the primary store of all your content is always your device.</p>
+      <p><strong>When data may pass through our servers:</strong> Certain features require your data to be temporarily transmitted to our servers in order to function. These include syncing across devices, delivering personalised digests, processing browser extension saves, and maintaining the configuration necessary to provide these features. In all such cases, data is used solely to deliver the feature you activated, is transmitted securely (encrypted in transit), and is not used for any other purpose. See Section 3.2 for more detail.</p>
+      <h3>2.2 Account information</h3>
+      <p>If you create a Popy account, we collect:</p>
+      <ul>
+        <li>Email address</li>
+        <li>Name (optional)</li>
+        <li>Payment information (processed by our payment provider, not stored by us)</li>
+      </ul>
+      <h3>2.3 Usage data</h3>
+      <p>We collect anonymised, aggregate usage statistics to understand how Popy is used and to manage costs. This includes:</p>
+      <ul>
+        <li>Number of API calls made (e.g., transcription requests)</li>
+        <li>Token counts for AI processing</li>
+        <li>Minutes of audio transcribed</li>
+        <li>Feature usage frequency</li>
+        <li>App version and operating system</li>
+        <li>Crash reports and error logs</li>
+      </ul>
+      <p><strong>What we don't collect:</strong> The actual content of your notes, articles, meetings, voice memos, or any other data you create. We see that "a transcription request was made" but not what was said.</p>
+      <h3>2.4 Data collected automatically</h3>
+      <p>When you use Popy, we may automatically collect:</p>
+      <ul>
+        <li>Device type and operating system</li>
+        <li>App version</li>
+        <li>General location (country level, derived from IP address)</li>
+        <li>Timestamps of app usage</li>
+      </ul>
+
+      <h2>3. How we use your data</h2>
+      <h3>3.1 To provide on-device features</h3>
+      <p>Your data powers all of Popy's core features — search, organisation, connections between items, and more. This processing happens on your device.</p>
+      <h3>3.2 To provide features that require server-side processing</h3>
+      <p>Some features cannot operate entirely on your device. When you use these features, limited data is transmitted to our servers:</p>
+      <ul>
+        <li><strong>Syncing:</strong> If you enable sync, data is transmitted to our servers to keep your devices in step. Synced data is stored only as long as necessary to complete the sync operation.</li>
+        <li><strong>Digests and research features:</strong> Personalised digests and research features may require us to temporarily store relevant context and configuration on our servers in order to generate and deliver results to you.</li>
+        <li><strong>Browser extension:</strong> When you save items via the Popy browser extension, data may be relayed through our servers to reach your device.</li>
+      </ul>
+      <p>In all of these cases: we do not read, sell, or repurpose your content. Data transmitted to our servers is used solely for the purpose of delivering the feature, is encrypted in transit, and we make commercially reasonable efforts to ensure its security at rest.</p>
+      <h3>3.3 To provide AI-powered features</h3>
+      <p>Certain features require sending data to third-party AI providers. Our agreements with these providers ensure:</p>
+      <ul>
+        <li>Your data is processed and immediately discarded</li>
+        <li>Your data is never used to train their AI models</li>
+        <li>Your data is not stored beyond the time needed to complete the request</li>
+        <li>Data is transmitted securely (encrypted in transit)</li>
+      </ul>
+      <h3>3.4 To improve Popy</h3>
+      <p>We use anonymised, aggregate usage data to:</p>
+      <ul>
+        <li>Understand which features are most useful</li>
+        <li>Identify and fix bugs</li>
+        <li>Make decisions about future development</li>
+        <li>Manage infrastructure costs</li>
+      </ul>
+      <h3>3.5 To communicate with you</h3>
+      <p>If you've provided your email, we may send:</p>
+      <ul>
+        <li>Important product updates and security notices</li>
+        <li>Responses to your support requests</li>
+        <li>Occasional product announcements (you can opt out)</li>
+      </ul>
+      <p>We will never sell your email address or share it with third parties for marketing.</p>
+
+      <h2>4. How we protect your data</h2>
+      <h3>4.1 On-device storage</h3>
+      <p>Your content lives on your device, under your control. We do not have routine access to it.</p>
+      <h3>4.2 Data in transit</h3>
+      <p>All data transmitted between your device and our servers, or between your device and third-party providers, is encrypted using TLS/HTTPS.</p>
+      <h3>4.3 Server-side security</h3>
+      <p>Where data is temporarily processed or stored on our servers (see Section 3.2), we apply commercially reasonable security measures to protect it. However, no method of electronic transmission or storage is completely secure, and we cannot guarantee absolute security.</p>
+      <h3>4.4 Minimal data collection</h3>
+      <p>We follow the principle of data minimisation — we only collect and transmit what we need to provide and improve the Service.</p>
+
+      <h2>5. Third-party services</h2>
+      <p>Popy uses third-party services for audio transcription, AI processing, and payment processing. We select providers with strong privacy practices and data protection agreements. When your data is sent to a third-party provider, it is governed by that provider's privacy policy in addition to ours. We encourage you to review their policies.</p>
+
+      <h2>6. Data retention</h2>
+      <h3>6.1 Your content</h3>
+      <p>Your notes, articles, meetings, and other content are stored on your device. We don't maintain permanent copies, so we don't have retention policies for this data — you control it entirely.</p>
+      <p>Where data has been temporarily transmitted to our servers to deliver a feature (Section 3.2), it is retained only as long as necessary to provide that feature and is removed promptly thereafter.</p>
+      <h3>6.2 Account information</h3>
+      <p>If you have an account, we retain your email and account details for as long as your account is active. If you delete your account, we delete this information within 30 days.</p>
+      <h3>6.3 Usage data</h3>
+      <p>Anonymised usage statistics may be retained indefinitely for aggregate analysis. This data cannot be tied back to you or your content.</p>
+
+      <h2>7. Your rights</h2>
+      <p>Depending on where you live, you may have the following rights:</p>
+      <h3>7.1 Access</h3>
+      <p>You can request a copy of any personal data we hold about you (primarily account information and usage data associated with your account).</p>
+      <h3>7.2 Deletion</h3>
+      <p>You can request deletion of your account and associated data. Since your content is stored on your device, deleting it is as simple as deleting it within the app or uninstalling Popy.</p>
+      <h3>7.3 Correction</h3>
+      <p>You can update your account information at any time in the app settings.</p>
+      <h3>7.4 Opt-out</h3>
+      <p>You can opt out of non-essential communications at any time.</p>
+      <p>To exercise any of these rights, contact us at <a href="mailto:team@getpopy.com">team@getpopy.com</a>.</p>
+
+      <h2>8. Data deletion</h2>
+      <h3>8.1 On-device data</h3>
+      <p>Your content — notes, articles, meetings, voice memos, tasks, and all related data — is stored on your device. We do not have access to this data and cannot read, modify, or delete it remotely. When you delete content within Popy or uninstall the app, that data remains on your device under your control.</p>
+      <p>If you need assistance clearing local data from your device, contact us at <a href="mailto:team@getpopy.com">team@getpopy.com</a> and we will guide you through the process.</p>
+      <h3>8.2 Server-side data</h3>
+      <p>Certain features require temporary server-side processing or storage (see Section 3.2). When you delete the app or your account, any server-side data associated with these features is automatically deleted within 4 hours.</p>
+      <h3>8.3 Account and connected services</h3>
+      <p>Popy does not require an account to use. If you connected a Google account to Popy (for example, for calendar integration), that data was stored on your device and not on our servers.</p>
+      <p>If you created a Popy account, your account information (email, payment history) is deleted within 30 days of account deletion. Anonymised usage statistics are retained but cannot be connected to you.</p>
+
+      <h2>9. Children's privacy</h2>
+      <p>Popy is not intended for children under 13 (or under 16 in certain jurisdictions). We do not knowingly collect personal information from children. If you believe a child has provided us with personal information, please contact us.</p>
+
+      <h2>10. International data transfers</h2>
+      <p>If you're located outside the United States, please note that data sent to our AI providers or processed by our servers may be handled in different countries. We ensure appropriate safeguards are in place through our data processing agreements with these providers.</p>
+
+      <h2>11. Changes to this policy</h2>
+      <p>We may update this privacy policy from time to time. If we make significant changes, we'll notify you through the app or via email before the changes take effect.</p>
+      <p>The "Last updated" date at the top indicates when this policy was last revised.</p>
+
+      <h2>12. Contact us</h2>
+      <p>If you have questions, concerns, or requests regarding this privacy policy or your data, contact us at:</p>
+      <p><strong>Email:</strong> <a href="mailto:team@getpopy.com">team@getpopy.com</a></p>
+      <p><strong>Web:</strong> <a href="https://getpopy.com">getpopy.com</a></p>
+
+      <h2>Summary table</h2>
+      <table>
+        <thead><tr><th>Data type</th><th>Stored where</th><th>Shared with</th><th>Retention</th></tr></thead>
+        <tbody>
+          <tr><td>Your content (notes, articles, etc.)</td><td>Your device</td><td>AI providers for processing (then discarded); our servers temporarily for sync, digests, and extension features</td><td>You control it</td></tr>
+          <tr><td>Account info (email)</td><td>Our servers</td><td>Payment provider</td><td>Until account deletion + 30 days</td></tr>
+          <tr><td>Usage statistics</td><td>Our servers</td><td>No one</td><td>Indefinitely (anonymised)</td></tr>
+          <tr><td>Payment info</td><td>Payment provider</td><td>—</td><td>Per provider policy</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </details>
+</div></section>
+
+<footer><div class="wrap foot">
+  <a href="index.html" class="brand"><span class="mk"></span>Popy</a>
+  <div class="links">
+    <div class="col"><h5>Product</h5><a href="email.html">Email</a><a href="pricing.html">Pricing</a><a href="https://pub-a49d8152e2ad4e1480829172abb5d7a9.r2.dev/releases/v0.1.9/Popy_0.1.9_aarch64.dmg">Download</a></div>
+    <div class="col"><h5>Trust</h5><a href="privacy.html">Privacy</a><a href="privacy.html#security">Security</a><a href="manifesto.html">Manifesto</a></div>
+    <div class="col"><h5>Support</h5><a href="support.html">Help &amp; support</a><a href="https://tally.so/r/VLQByv" target="_blank" rel="noopener">Contact</a><a href="blog.html">Blog</a></div>
+    <div class="col"><h5>Legal</h5><a href="tos.html">Terms</a><a href="privacy.html">Privacy policy</a></div>
+  </div>
+  <div class="copyright">© 2026 Popy. Local-first, on your Mac.</div>
+</div></footer>
+<script>const io=new IntersectionObserver((es)=>{es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:.12});document.querySelectorAll('.reveal').forEach(el=>io.observe(el));</script>
+</body></html>
