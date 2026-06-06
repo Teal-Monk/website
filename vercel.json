@@ -1,6 +1,9 @@
 {
   "buildCommand": "",
   "outputDirectory": ".",
+  "redirects": [
+    { "source": "/v3", "destination": "/v3/", "permanent": false }
+  ],
   "rewrites": [
     { "source": "/logo.png", "destination": "/public/images/logo.png" },
     { "source": "/mcp", "destination": "/integrations.html" },
