@@ -12,6 +12,10 @@ Thumbs.db
 # Reference docs (not for production)
 ref_docs/
 
+# Old staging / superseded builds (v3 promoted to root)
+new9/
+v3/
+
 # Placeholder files
 public/images/PLACE_LOGO_HERE.txt
 

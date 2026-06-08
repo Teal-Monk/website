@@ -1,181 +1,114 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Why your AI still doesn't know what you did last Tuesday. The gap between smart AI and useful teammate isn't intelligence, it's context.">
-  <meta name="author" content="Popy">
-
-  <!-- Open Graph / Social Media -->
-  <meta property="og:type" content="article">
-  <meta property="og:title" content="The Umami of Your AI Tooling">
-  <meta property="og:description" content="Why your AI still doesn't know what you did last Tuesday.">
-  <meta property="og:url" content="https://getpopy.com/blog-umami-ai-tooling.html">
-  <meta property="og:image" content="https://getpopy.com/public/images/blog/umami-ai-tooling.jpg">
-
-  <title>The Umami of Your AI Tooling | Popy Blog</title>
-
-  <!-- Favicon -->
-  <link rel="icon" type="image/png" href="public/images/favicon.png">
-
-  <!-- Styles -->
-  <link rel="stylesheet" href="css/styles.css">
-</head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Why your AI still doesn't know what you did last Tuesday. The gap between smart AI and useful teammate isn't intelligence, it's context.">
+<meta name="author" content="Popy">
+<meta property="og:type" content="article">
+<meta property="og:title" content="The Umami of Your AI Tooling">
+<meta property="og:description" content="Why your AI still doesn't know what you did last Tuesday.">
+<meta property="og:url" content="https://getpopy.com/blog-umami-ai-tooling">
+<meta property="og:image" content="https://getpopy.com/public/images/blog/umami-ai-tooling.jpg">
+<link rel="icon" type="image/png" href="/public/images/favicon.png">
+<title>The Umami of Your AI Tooling — Popy Blog</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/css/v3.css">
+<style>
+  .post-head{text-align:center;padding:64px 0 8px}
+  .post-head .eyebrow{display:block;margin-bottom:14px}
+  .post-head h1{font-weight:700;letter-spacing:-1.2px;line-height:1.08;font-size:clamp(30px,4.4vw,46px);color:var(--ink);max-width:760px;margin:0 auto}
+  .post-head .sub{font-size:clamp(16px,2vw,20px);color:var(--text-secondary);margin:16px auto 0;max-width:560px}
+  .post-hero-img{max-width:900px;margin:30px auto 0;border-radius:var(--radius-xl);overflow:hidden;box-shadow:var(--frame-shadow-soft)}
+  .post-hero-img img{width:100%;display:block}
+  .post .prose code{background:var(--accent-bg-soft);padding:2px 6px;border-radius:5px;font-size:13px;color:var(--accent)}
+  .blog-cta{margin-top:44px;padding-top:32px;border-top:1px solid var(--border-soft);text-align:center}
+  .blog-cta p{font-size:14px;color:var(--text-secondary);margin-top:18px;line-height:1.65}
+  .blog-cta a:not(.btn){color:var(--accent);text-decoration:underline;text-underline-offset:2px}
+</style></head>
 <body>
+<nav><div class="nav-in"><a href="index.html" class="brand"><img src="/public/images/logo.png" alt="" class="brand-logo">Popy</a>
+  <button class="hamburger" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
+  <div class="nav-links"><a href="email.html">Email</a><a href="pricing.html">Pricing</a><a href="support.html">Support</a><a href="https://pub-a49d8152e2ad4e1480829172abb5d7a9.r2.dev/releases/v0.2.5/Popy_0.2.5_aarch64.dmg" class="btn btn-primary">Download for Mac</a></div></div></nav>
 
-  <!-- Header -->
-  <header>
-    <a href="index.html" class="logo"><img src="public/images/logo.png" alt="Popy logo">Popy</a>
-    <button class="hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
-    <nav class="header-nav">
-      <a href="features.html">Features</a>
-      <a href="pricing.html">Pricing</a>
-      <a href="support.html">Support</a>
-    </nav>
-  </header>
+<div class="post-head"><div class="wrap">
+  <div class="eyebrow reveal">Blog</div>
+  <h1 class="reveal">The Umami of Your AI Tooling</h1>
+  <p class="sub reveal">Why your AI still doesn't know what you did last Tuesday.</p>
+  <div class="post-meta reveal"><time datetime="2026-03-31">March 31, 2026</time> · <span>7 min read</span></div>
+</div></div>
+<div class="wrap"><div class="post-hero-img reveal"><img src="/public/images/blog/umami-ai-tooling.jpg" alt="The Umami of Your AI Tooling"></div></div>
 
-  <!-- Blog Post -->
-  <article class="blog-post">
+<article class="wrap"><div class="post"><div class="prose" style="padding-top:36px">
+  <p>You know what makes a great colleague great? It's not just that they're smart. It's that they were <em>in the room</em>.</p>
+  <p>They were in the meeting six months ago when you tried approach X and it didn't work. They remember why the architecture decision went the way it did. When Sundar mentions "the performance issue," they know he's talking about the Q2 incident, not the recent one. They don't need a briefing. They have context.</p>
+  <p>Now open Claude, ChatGPT, or Gemini. Ask it to help with the thing you were working on last week. Watch it politely ask you to explain everything from scratch.</p>
+  <p>The gap between "smart AI" and "useful teammate" isn't intelligence. It's grounded, accumulated, cross-tool context.</p>
+  <hr>
 
-    <div class="blog-post-header">
-      <a href="blog.html" class="blog-back-link">&larr; All posts</a>
-      <div class="page-label">Blog</div>
-      <h1>The Umami of Your AI Tooling</h1>
-      <p class="blog-subtitle">Why your AI still doesn't know what you did last Tuesday.</p>
-      <div class="blog-meta">
-        <time datetime="2026-03-31">March 31, 2026</time>
-        <span class="blog-meta-separator">&middot;</span>
-        <span>7 min read</span>
-      </div>
-    </div>
+  <h2>What the platforms are doing (and it's a lot)</h2>
+  <p>Let's start with the elephant in the room. Claude currently has the most complete attempt at solving this.</p>
+  <p>Memory extracts key facts across conversations. Projects let you upload persistent docs that load every session. <a href="https://modelcontextprotocol.io" target="_blank" rel="noopener">MCP</a> (Model Context Protocol) is a massive leap forward: it lets Claude connect to Google Drive, Slack, GitHub, and custom tools to pull live context. Claude Desktop brings the agent to your local environment, while <a href="https://github.com/coleam00/context-engineering-intro" target="_blank" rel="noopener">CLAUDE.md</a> (popularized by Claude Code) lets developers define project context in a markdown file the agent reads on startup.</p>
+  <p>Credit where it's due: MCP changes the game by turning Claude from a closed system into an extensible one.</p>
+  <p>But here's the gap I keep running into: <strong>these solve context at the session level, not at the life level.</strong></p>
+  <p>Memory stores what you <em>told</em> Claude, but it doesn't know about the meeting you didn't mention or the Slack thread that got resolved while you were offline. Projects are static: great for a codebase, but your work context changes daily and nobody re-uploads docs every morning. MCP connections are transactional: Claude can query your calendar right now, but it doesn't have a persistent, compounding model of your work over time.</p>
+  <p>ChatGPT's memory is similar. It stores preferences and facts across sessions, but it's shallow. Profile-level, not work-context. It knows <em>about</em> you, not <em>what you've been doing</em>.</p>
+  <p>Gemini has the deepest data advantage via Google Workspace (Gmail, Calendar, Drive, Meet). But it's still pull-based and scoped. You don't get a unified context layer connecting your emails to your meetings to your notes over a six-month timeline.</p>
+  <hr>
 
-    <div class="blog-hero">
-      <img src="public/images/blog/umami-ai-tooling.jpg" alt="The Umami of Your AI Tooling">
-    </div>
+  <h2>What the open-source ecosystem is building</h2>
+  <p>Hundreds of developers and startups are attacking this from different angles. The sheer volume of activity is a signal: the need is real.</p>
+  <p><strong>The memory infrastructure heavyweights:</strong> Open-source projects like <a href="https://github.com/mem0ai/mem0" target="_blank" rel="noopener">Mem0</a> (formerly Embedchain) and <a href="https://github.com/letta-ai/letta" target="_blank" rel="noopener">Letta</a> (formerly MemGPT) are building OS-level memory for LLMs. Mem0 provides a personalized, adaptive memory layer across applications, while Letta treats LLM memory like an operating system, managing tiered storage so the AI doesn't forget past events. They are brilliant developer primitives, but most people would be better off with an out-of-the-box AI that knows what happened last week.</p>
+  <p><strong>The markdown bootstrap crowd:</strong> Developers are solving context with discipline. Projects like <a href="https://github.com/coleam00/context-engineering-intro" target="_blank" rel="noopener">context-engineering-intro</a> use structured CLAUDE.md files. On r/PKMS, "Portable Brain" projects use PARA-inspired markdown hierarchies with nightly bash scripts that rebuild context files automatically. The agent writes back to a <code>memory.md</code> file, creating a self-improving loop. The ceiling? It only knows what you actively write down.</p>
+  <p><strong>Persistent context for coding agents:</strong> Tools like <a href="https://github.com/0xranx/OpenContext" target="_blank" rel="noopener">OpenContext</a> and <a href="https://github.com/robinfaraj/one-context" target="_blank" rel="noopener">OneContext</a> sync your identity and code history to solve the "I just spent 2 hours debugging and lost the session" problem. But they are strictly scoped to code. The product meeting where the architectural decision was made remains invisible.</p>
+  <p><strong>Passive capture tools:</strong> <a href="https://limitless.ai" target="_blank" rel="noopener">Limitless</a> (formerly Rewind.ai) pioneered the "record everything on your screen and mic" approach for macOS. Meanwhile, tools like <a href="https://granola.ai" target="_blank" rel="noopener">Granola</a> and <a href="https://tldv.io" target="_blank" rel="noopener">tl;dv</a> are capturing meeting context flawlessly. Yet, they remain somewhat siloed: great at capture, but lacking the unified, automated knowledge graph that connects your Tuesday meeting directly to your Friday pull request.</p>
+  <hr>
 
-    <div class="blog-content">
+  <h2>The Umami Layer</h2>
+  <p>All these approaches share one thing: they solve a slice of the problem, but none aggregate your <em>actual digital life</em> into a unified, persistent context layer.</p>
+  <p>Think about what an AI that was functionally "in the room" would look like. It attended your meetings (via transcription), read what you read (via bookmarks), tracked your calendar, and knows who you work with. When you ask, "What was that thing from Q2 planning relevant to this feature?" it doesn't search. It <em>knows</em>.</p>
+  <p>We believe this requires six things that are incredibly hard to get right simultaneously:</p>
+  <p><strong>Passive aggregation.</strong> It pulls from your tools without manual input. The moment it requires upkeep, people abandon it.</p>
+  <p><strong>Temporal grounding.</strong> It understands <em>when</em> things happened. "Last Tuesday" is a real reference a flat vector database struggles to represent.</p>
+  <p><strong>Entity resolution.</strong> "Sarah" in your notes, "sarah@company.com" in your calendar, and "@sarah" in Slack are the same person. The context layer must just know this.</p>
+  <p><strong>Cross-source connections.</strong> The article you read last week connects to the feature you're building, which connects to the Slack thread where the decision was made.</p>
+  <p><strong>Compounding value.</strong> A context layer with six months of history isn't linearly better than one with six days. It's <em>qualitatively different</em>. It knows things about your work that you've forgotten yourself.</p>
+  <p><strong>Local-first privacy.</strong> The part nobody talks about enough: a context layer that holds your meetings, notes, tasks, contacts, and work history is one of the most sensitive datasets imaginable. Your data has to live on your machine, under your control. Not on a startup's servers, not in a cloud database. When LLMs are involved for tasks like summarization or enrichment, a hybrid approach is necessary: anonymized data sent for processing, but your raw content never leaves your device. This isn't a nice-to-have. For a product that knows this much about your work, security-first architecture is table stakes.</p>
+  <p>This isn't just RAG (Retrieval-Augmented Generation). RAG retrieves documents. A true context layer understands the relationships between people, timelines, and ideas.</p>
+  <hr>
 
-      <p>You know what makes a great colleague great? It's not just that they're smart. It's that they were <em>in the room</em>.</p>
+  <h2>Why I think about this</h2>
+  <p>I've been building infrastructure for AI agents for a while. Last year I built <a href="https://poc.iamheimdall.com/ui/whitepaper" target="_blank" rel="noopener">IAMHeimdall</a>, exploring a critical question: <em>who is this agent and what is it allowed to do?</em> That work is <a href="https://blog.iamheimdall.com/2025/05/08/TrustinanAutomatedWorld/" target="_blank" rel="noopener">open</a>, and I still believe agent identity is a massive unsolved problem.</p>
+  <p>But even a properly identified, perfectly authorized agent is useless if it doesn't know what you've been working on. Identity without context is just a security badge with amnesia. That realization led me to <a href="https://getpopy.com">Popy</a>.</p>
+  <hr>
 
-      <p>They were in the meeting six months ago when you tried approach X and it didn't work. They remember why the architecture decision went the way it did. When Sundar mentions "the performance issue," they know he's talking about the Q2 incident, not the recent one. They don't need a briefing. They have context.</p>
+  <h2>What we're building, and an honest ask</h2>
+  <p>We're all circling the same core issue. The markdown crowd solves it with discipline; Mem0 solves it with infrastructure; Limitless solves it with screen recording.</p>
+  <p>Our approach with <a href="https://getpopy.com">Popy</a> is to build a local-first macOS app that passively aggregates your scattered digital life into one timeline, then builds a knowledge graph on top that automatically resolves and connects entities across everything. Your data lives on your machine. When we use LLMs for enrichment, the data is anonymized in transit and never stored on our servers.</p>
+  <p>Here's what this actually looks like in practice.</p>
+  <p>You're figuring out a caching layer for your app. You ask Claude: "Have we looked at this before?"</p>
+  <p>Popy, connected via MCP, finds that three months ago, in a meeting with your engineering lead, you discussed the same approach. You decided against it at the time because of a scalability concern she raised. Popy also surfaces an article you saved that same week about edge caching patterns, and a task that was created and later closed without resolution.</p>
+  <p>It's very tough for a combination of individual MCP calls to Granola, Linear, or Google Docs to surface this. Each of those tools holds one piece, and none of them know the pieces are related. The connection only exists because Popy has been quietly building a graph of your work across tools and time. That's the difference between "AI that can look things up" and "AI that was in the room."</p>
+  <p>We're starting with the integrations that matter most: calendar, meetings, your notes, and reads. The knowledge graph connects them, and MCP makes the context available to Claude and other AI tools. We're building outward from there.</p>
+  <p>Passive aggregation across a whole digital life is hard. Really hard. Which is why we're not pretending we've solved it all on day one. But the core loop (capture, connect, surface via MCP) is working, and every week the graph gets richer.</p>
+  <p>It's early, and we're actively looking for people who deeply feel this pain point to try it and tell us where it breaks.</p>
 
-      <p>Now open Claude, ChatGPT, or Gemini. Ask it to help with the thing you were working on last week. Watch it politely ask you to explain everything from scratch.</p>
+  <div class="blog-cta">
+    <a href="https://pub-a49d8152e2ad4e1480829172abb5d7a9.r2.dev/releases/v0.2.5/Popy_0.2.5_aarch64.dmg" class="btn btn-primary btn-lg">Download Popy for macOS</a>
+    <p>If you've been thinking about context persistence, building in this space, or just want to tell us we're wrong about our approach, <a href="https://cal.com/popy-team/15min" target="_blank" rel="noopener">reach out</a>. We'd love to hear from you.</p>
+  </div>
 
-      <p>The gap between "smart AI" and "useful teammate" isn't intelligence. It's grounded, accumulated, cross-tool context.</p>
+  <a href="blog.html" class="post-back">← All posts</a>
+</div></div></article>
 
-      <hr>
-
-      <h2>What the platforms are doing (and it's a lot)</h2>
-
-      <p>Let's start with the elephant in the room. Claude currently has the most complete attempt at solving this.</p>
-
-      <p>Memory extracts key facts across conversations. Projects let you upload persistent docs that load every session. <a href="https://modelcontextprotocol.io" target="_blank" rel="noopener">MCP</a> (Model Context Protocol) is a massive leap forward: it lets Claude connect to Google Drive, Slack, GitHub, and custom tools to pull live context. Claude Desktop brings the agent to your local environment, while <a href="https://github.com/coleam00/context-engineering-intro" target="_blank" rel="noopener">CLAUDE.md</a> (popularized by Claude Code) lets developers define project context in a markdown file the agent reads on startup.</p>
-
-      <p>Credit where it's due: MCP changes the game by turning Claude from a closed system into an extensible one.</p>
-
-      <p>But here's the gap I keep running into: <strong>these solve context at the session level, not at the life level.</strong></p>
-
-      <p>Memory stores what you <em>told</em> Claude, but it doesn't know about the meeting you didn't mention or the Slack thread that got resolved while you were offline. Projects are static: great for a codebase, but your work context changes daily and nobody re-uploads docs every morning. MCP connections are transactional: Claude can query your calendar right now, but it doesn't have a persistent, compounding model of your work over time.</p>
-
-      <p>ChatGPT's memory is similar. It stores preferences and facts across sessions, but it's shallow. Profile-level, not work-context. It knows <em>about</em> you, not <em>what you've been doing</em>.</p>
-
-      <p>Gemini has the deepest data advantage via Google Workspace (Gmail, Calendar, Drive, Meet). But it's still pull-based and scoped. You don't get a unified context layer connecting your emails to your meetings to your notes over a six-month timeline.</p>
-
-      <hr>
-
-      <h2>What the open-source ecosystem is building</h2>
-
-      <p>Hundreds of developers and startups are attacking this from different angles. The sheer volume of activity is a signal: the need is real.</p>
-
-      <p><strong>The memory infrastructure heavyweights:</strong> Open-source projects like <a href="https://github.com/mem0ai/mem0" target="_blank" rel="noopener">Mem0</a> (formerly Embedchain) and <a href="https://github.com/letta-ai/letta" target="_blank" rel="noopener">Letta</a> (formerly MemGPT) are building OS-level memory for LLMs. Mem0 provides a personalized, adaptive memory layer across applications, while Letta treats LLM memory like an operating system, managing tiered storage so the AI doesn't forget past events. They are brilliant developer primitives, but most people would be better off with an out-of-the-box AI that knows what happened last week.</p>
-
-      <p><strong>The markdown bootstrap crowd:</strong> Developers are solving context with discipline. Projects like <a href="https://github.com/coleam00/context-engineering-intro" target="_blank" rel="noopener">context-engineering-intro</a> use structured CLAUDE.md files. On r/PKMS, "Portable Brain" projects use PARA-inspired markdown hierarchies with nightly bash scripts that rebuild context files automatically. The agent writes back to a <code>memory.md</code> file, creating a self-improving loop. The ceiling? It only knows what you actively write down.</p>
-
-      <p><strong>Persistent context for coding agents:</strong> Tools like <a href="https://github.com/0xranx/OpenContext" target="_blank" rel="noopener">OpenContext</a> and <a href="https://github.com/robinfaraj/one-context" target="_blank" rel="noopener">OneContext</a> sync your identity and code history to solve the "I just spent 2 hours debugging and lost the session" problem. But they are strictly scoped to code. The product meeting where the architectural decision was made remains invisible.</p>
-
-      <p><strong>Passive capture tools:</strong> <a href="https://limitless.ai" target="_blank" rel="noopener">Limitless</a> (formerly Rewind.ai) pioneered the "record everything on your screen and mic" approach for macOS. Meanwhile, tools like <a href="https://granola.ai" target="_blank" rel="noopener">Granola</a> and <a href="https://tldv.io" target="_blank" rel="noopener">tl;dv</a> are capturing meeting context flawlessly. Yet, they remain somewhat siloed: great at capture, but lacking the unified, automated knowledge graph that connects your Tuesday meeting directly to your Friday pull request.</p>
-
-      <hr>
-
-      <h2>The Umami Layer</h2>
-
-      <p>All these approaches share one thing: they solve a slice of the problem, but none aggregate your <em>actual digital life</em> into a unified, persistent context layer.</p>
-
-      <p>Think about what an AI that was functionally "in the room" would look like. It attended your meetings (via transcription), read what you read (via bookmarks), tracked your calendar, and knows who you work with. When you ask, "What was that thing from Q2 planning relevant to this feature?" it doesn't search. It <em>knows</em>.</p>
-
-      <p>We believe this requires six things that are incredibly hard to get right simultaneously:</p>
-
-      <p><strong>Passive aggregation.</strong> It pulls from your tools without manual input. The moment it requires upkeep, people abandon it.</p>
-
-      <p><strong>Temporal grounding.</strong> It understands <em>when</em> things happened. "Last Tuesday" is a real reference a flat vector database struggles to represent.</p>
-
-      <p><strong>Entity resolution.</strong> "Sarah" in your notes, "sarah@company.com" in your calendar, and "@sarah" in Slack are the same person. The context layer must just know this.</p>
-
-      <p><strong>Cross-source connections.</strong> The article you read last week connects to the feature you're building, which connects to the Slack thread where the decision was made.</p>
-
-      <p><strong>Compounding value.</strong> A context layer with six months of history isn't linearly better than one with six days. It's <em>qualitatively different</em>. It knows things about your work that you've forgotten yourself.</p>
-
-      <p><strong>Local-first privacy.</strong> Here's the thing nobody talks about enough: a context layer that holds your meetings, notes, tasks, contacts, and work history is one of the most sensitive datasets imaginable. Your data has to live on your machine, under your control. Not on a startup's servers, not in a cloud database. When LLMs are involved for tasks like summarization or enrichment, a hybrid approach is necessary: anonymized data sent for processing, but your raw content never leaves your device. This isn't a nice-to-have. For a product that knows this much about your work, security-first architecture is table stakes.</p>
-
-      <p>This isn't just RAG (Retrieval-Augmented Generation). RAG retrieves documents. A true context layer understands the relationships between people, timelines, and ideas.</p>
-
-      <hr>
-
-      <h2>Why I think about this</h2>
-
-      <p>I've been building infrastructure for AI agents for a while. Last year I built <a href="https://poc.iamheimdall.com/ui/whitepaper" target="_blank" rel="noopener">IAMHeimdall</a>, exploring a critical question: <em>who is this agent and what is it allowed to do?</em> That work is <a href="https://blog.iamheimdall.com/2025/05/08/TrustinanAutomatedWorld/" target="_blank" rel="noopener">open</a>, and I still believe agent identity is a massive unsolved problem.</p>
-
-      <p>But even a properly identified, perfectly authorized agent is useless if it doesn't know what you've been working on. Identity without context is just a security badge with amnesia. That realization led me to <a href="https://getpopy.com">Popy</a>.</p>
-
-      <hr>
-
-      <h2>What we're building, and an honest ask</h2>
-
-      <p>We're all circling the same core issue. The markdown crowd solves it with discipline; Mem0 solves it with infrastructure; Limitless solves it with screen recording.</p>
-
-      <p>Our approach with <a href="https://getpopy.com">Popy</a> is to build a local-first macOS app that passively aggregates your scattered digital life into one timeline, then builds a knowledge graph on top that automatically resolves and connects entities across everything. Your data lives on your machine. When we use LLMs for enrichment, the data is anonymized in transit and never stored on our servers.</p>
-
-      <p>Here's what this actually looks like in practice.</p>
-
-      <p>You're figuring out a caching layer for your app. You ask Claude: "Have we looked at this before?"</p>
-
-      <p>Popy, connected via MCP, finds that three months ago, in a meeting with your engineering lead, you discussed the same approach. You decided against it at the time because of a scalability concern she raised. Popy also surfaces an article you saved that same week about edge caching patterns, and a task that was created and later closed without resolution.</p>
-
-      <p>It's very tough for a combination of individual MCP calls to Granola, Linear, or Google Docs to surface this. Each of those tools holds one piece, and none of them know the pieces are related. The connection only exists because Popy has been quietly building a graph of your work across tools and time. That's the difference between "AI that can look things up" and "AI that was in the room."</p>
-
-      <p>We're starting with the integrations that matter most: calendar, meetings, your notes, and reads. The knowledge graph connects them, and MCP makes the context available to Claude and other AI tools. We're building outward from there.</p>
-
-      <p>Passive aggregation across a whole digital life is hard. Really hard. Which is why we're not pretending we've solved it all on day one. But the core loop (capture, connect, surface via MCP) is working, and every week the graph gets richer.</p>
-
-      <p>It's early, and we're actively looking for people who deeply feel this pain point to try it and tell us where it breaks.</p>
-
-      <!-- CTA -->
-      <div class="blog-cta">
-        <a href="https://pub-a49d8152e2ad4e1480829172abb5d7a9.r2.dev/releases/v0.1.9/Popy_0.1.9_aarch64.dmg" class="btn btn-primary">Download Popy for macOS</a>
-        <p>If you've been thinking about context persistence, building in this space, or just want to tell us we're wrong about our approach, <a href="https://cal.com/popy-team/15min" target="_blank" rel="noopener">reach out</a>. We'd love to hear from you.</p>
-      </div>
-
-    </div>
-
-  </article>
-
-  <!-- Footer -->
-  <footer>
-    <div class="footer-links">
-      <a href="features.html">Features</a>
-      <a href="pricing.html">Pricing</a>
-      <a href="integrations.html">Integrations</a>
-      <a href="support.html">Support</a>
-      <a href="privacy.html">Privacy</a>
-      <a href="tos.html">Terms</a>
-      <a href="blog.html">Blog</a>
-      <a href="manifesto.html">Manifesto</a>
-    </div>
-    <p>Popy · Made for people who save things</p>
-  </footer>
-
-  <!-- Scripts -->
-  <script src="js/main.js"></script>
-
-</body>
-</html>
+<footer><div class="wrap foot">
+  <a href="index.html" class="brand"><img src="/public/images/logo.png" alt="" class="brand-logo">Popy</a>
+  <div class="links">
+    <div class="col"><h5>Product</h5><a href="email.html">Email</a><a href="pricing.html">Pricing</a><a href="https://pub-a49d8152e2ad4e1480829172abb5d7a9.r2.dev/releases/v0.2.5/Popy_0.2.5_aarch64.dmg">Download</a></div>
+    <div class="col"><h5>Company</h5><a href="support.html">Support</a><a href="blog.html">Blog</a><a href="philosophy.html">Philosophy</a></div>
+    <div class="col"><h5>Legal</h5><a href="privacy.html">Privacy</a><a href="tos.html">Terms</a></div>
+  </div>
+  <div class="copyright">© 2026 Popy. Local-first, on your Mac.</div>
+</div></footer>
+<script src="/js/v3.js"></script>
+</body></html>

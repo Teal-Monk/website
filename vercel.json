@@ -2,12 +2,22 @@
   "buildCommand": "",
   "outputDirectory": ".",
   "redirects": [
-    { "source": "/v3", "destination": "/v3/", "permanent": false }
+    { "source": "/features", "destination": "/", "permanent": false },
+    { "source": "/features.html", "destination": "/", "permanent": false },
+    { "source": "/integrations", "destination": "/", "permanent": false },
+    { "source": "/integrations.html", "destination": "/", "permanent": false },
+    { "source": "/mcp", "destination": "/", "permanent": false },
+    { "source": "/mcp.html", "destination": "/", "permanent": false },
+    { "source": "/manifesto", "destination": "/philosophy.html", "permanent": false },
+    { "source": "/manifesto.html", "destination": "/philosophy.html", "permanent": false }
   ],
   "rewrites": [
     { "source": "/logo.png", "destination": "/public/images/logo.png" },
-    { "source": "/mcp", "destination": "/integrations.html" },
-    { "source": "/mcp.html", "destination": "/integrations.html" },
+    { "source": "/email", "destination": "/email.html" },
+    { "source": "/pricing", "destination": "/pricing.html" },
+    { "source": "/privacy", "destination": "/privacy.html" },
+    { "source": "/support", "destination": "/support.html" },
+    { "source": "/philosophy", "destination": "/philosophy.html" },
     { "source": "/tos", "destination": "/tos.html" },
     { "source": "/blog", "destination": "/blog.html" }
   ]
