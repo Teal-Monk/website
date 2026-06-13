@@ -34,3 +34,20 @@
     });
   }
 })();
+
+// Ask Popy — recreated streaming answer animation (only runs where the section exists)
+(function () {
+  var demo = document.querySelector('.ask .frag');
+  if (!demo) return;
+  var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var answer = function () { demo.classList.remove('is-searching'); demo.classList.add('is-answered'); };
+  var search = function () { demo.classList.remove('is-answered'); demo.classList.add('is-searching'); };
+  if (reduce) { answer(); return; }
+  var cycle = function () { search(); setTimeout(answer, 2500); };
+  var start = new IntersectionObserver(function (entries) {
+    entries.forEach(function (e) {
+      if (e.isIntersecting) { cycle(); setInterval(cycle, 9200); start.unobserve(e.target); }
+    });
+  }, { threshold: 0.3 });
+  start.observe(demo);
+})();
