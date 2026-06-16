@@ -13,6 +13,7 @@
   ],
   "rewrites": [
     { "source": "/logo.png", "destination": "/public/images/logo.png" },
+    { "source": "/meetings", "destination": "/meetings.html" },
     { "source": "/email", "destination": "/email.html" },
     { "source": "/pricing", "destination": "/pricing.html" },
     { "source": "/privacy", "destination": "/privacy.html" },
