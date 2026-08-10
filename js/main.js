@@ -1,5 +1,5 @@
 /**
- * Popy Website - Main JavaScript
+ * TealMonk Website - Main JavaScript
  * Handles animations and interactions
  */
 

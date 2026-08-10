@@ -1,4 +1,4 @@
-// Popy v3 — shared scripts: scroll reveal + mobile menu
+// TealMonk v3 — shared scripts: scroll reveal + mobile menu
 (function () {
   // Scroll-reveal
   var io = new IntersectionObserver(function (entries) {
@@ -35,7 +35,7 @@
   }
 })();
 
-// Ask Popy — recreated streaming answer animation (only runs where the section exists)
+// Ask Monk — recreated streaming answer animation (only runs where the section exists)
 (function () {
   var demo = document.querySelector('.ask .frag');
   if (!demo) return;

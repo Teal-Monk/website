@@ -3,14 +3,14 @@
 <head>
 <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="Why your AI still doesn't know what you did last Tuesday. The gap between smart AI and useful teammate isn't intelligence, it's context.">
-<meta name="author" content="Popy">
+<meta name="author" content="TealMonk">
 <meta property="og:type" content="article">
 <meta property="og:title" content="The Umami of Your AI Tooling">
 <meta property="og:description" content="Why your AI still doesn't know what you did last Tuesday.">
-<meta property="og:url" content="https://getpopy.com/blog-umami-ai-tooling">
-<meta property="og:image" content="https://getpopy.com/public/images/blog/umami-ai-tooling.jpg">
+<meta property="og:url" content="https://tealmonk.com/blog-umami-ai-tooling">
+<meta property="og:image" content="https://tealmonk.com/public/images/blog/umami-ai-tooling.jpg">
 <link rel="icon" type="image/png" href="/public/images/favicon.png">
-<title>The Umami of Your AI Tooling — Popy Blog</title>
+<title>The Umami of Your AI Tooling — TealMonk Blog</title>
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="/css/v3.css">
@@ -27,7 +27,7 @@
   .blog-cta a:not(.btn){color:var(--accent);text-decoration:underline;text-underline-offset:2px}
 </style></head>
 <body>
-<nav><div class="nav-in"><a href="index.html" class="brand"><img src="/public/images/logo.png" alt="" class="brand-logo">Popy</a>
+<nav><div class="nav-in"><a href="index.html" class="brand"><img src="/public/images/logo.png" alt="" class="brand-logo">TealMonk</a>
   <button class="hamburger" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
   <div class="nav-links"><a href="meetings.html">Meetings</a><a href="email.html">Email</a><a href="pricing.html">Pricing</a><a href="support.html">Support</a><a href="https://pub-a49d8152e2ad4e1480829172abb5d7a9.r2.dev/releases/v0.3.4/Popy_0.3.4_aarch64.dmg" class="btn btn-primary">Download for Mac</a></div></div></nav>
 
@@ -79,22 +79,22 @@
 
   <h2>Why I think about this</h2>
   <p>I've been building infrastructure for AI agents for a while. Last year I built <a href="https://poc.iamheimdall.com/ui/whitepaper" target="_blank" rel="noopener">IAMHeimdall</a>, exploring a critical question: <em>who is this agent and what is it allowed to do?</em> That work is <a href="https://blog.iamheimdall.com/2025/05/08/TrustinanAutomatedWorld/" target="_blank" rel="noopener">open</a>, and I still believe agent identity is a massive unsolved problem.</p>
-  <p>But even a properly identified, perfectly authorized agent is useless if it doesn't know what you've been working on. Identity without context is just a security badge with amnesia. That realization led me to <a href="https://getpopy.com">Popy</a>.</p>
+  <p>But even a properly identified, perfectly authorized agent is useless if it doesn't know what you've been working on. Identity without context is just a security badge with amnesia. That realization led me to <a href="https://tealmonk.com">TealMonk</a>.</p>
   <hr>
 
   <h2>What we're building, and an honest ask</h2>
   <p>We're all circling the same core issue. The markdown crowd solves it with discipline; Mem0 solves it with infrastructure; Limitless solves it with screen recording.</p>
-  <p>Our approach with <a href="https://getpopy.com">Popy</a> is to build a local-first macOS app that passively aggregates your scattered digital life into one timeline, then builds a knowledge graph on top that automatically resolves and connects entities across everything. Your data lives on your machine. When we use LLMs for enrichment, the data is anonymized in transit and never stored on our servers.</p>
+  <p>Our approach with <a href="https://tealmonk.com">Monk</a> is to build a local-first macOS app that passively aggregates your scattered digital life into one timeline, then builds a knowledge graph on top that automatically resolves and connects entities across everything. Your data lives on your machine. When we use LLMs for enrichment, the data is anonymized in transit and never stored on our servers.</p>
   <p>Here's what this actually looks like in practice.</p>
   <p>You're figuring out a caching layer for your app. You ask Claude: "Have we looked at this before?"</p>
-  <p>Popy, connected via MCP, finds that three months ago, in a meeting with your engineering lead, you discussed the same approach. You decided against it at the time because of a scalability concern she raised. Popy also surfaces an article you saved that same week about edge caching patterns, and a task that was created and later closed without resolution.</p>
-  <p>It's very tough for a combination of individual MCP calls to Granola, Linear, or Google Docs to surface this. Each of those tools holds one piece, and none of them know the pieces are related. The connection only exists because Popy has been quietly building a graph of your work across tools and time. That's the difference between "AI that can look things up" and "AI that was in the room."</p>
+  <p>Monk, connected via MCP, finds that three months ago, in a meeting with your engineering lead, you discussed the same approach. You decided against it at the time because of a scalability concern she raised. Monk also surfaces an article you saved that same week about edge caching patterns, and a task that was created and later closed without resolution.</p>
+  <p>It's very tough for a combination of individual MCP calls to Granola, Linear, or Google Docs to surface this. Each of those tools holds one piece, and none of them know the pieces are related. The connection only exists because Monk has been quietly building a graph of your work across tools and time. That's the difference between "AI that can look things up" and "AI that was in the room."</p>
   <p>We're starting with the integrations that matter most: calendar, meetings, your notes, and reads. The knowledge graph connects them, and MCP makes the context available to Claude and other AI tools. We're building outward from there.</p>
   <p>Passive aggregation across a whole digital life is hard. Really hard. Which is why we're not pretending we've solved it all on day one. But the core loop (capture, connect, surface via MCP) is working, and every week the graph gets richer.</p>
   <p>It's early, and we're actively looking for people who deeply feel this pain point to try it and tell us where it breaks.</p>
 
   <div class="blog-cta">
-    <a href="https://pub-a49d8152e2ad4e1480829172abb5d7a9.r2.dev/releases/v0.3.4/Popy_0.3.4_aarch64.dmg" class="btn btn-primary btn-lg">Download Popy for macOS</a>
+    <a href="https://pub-a49d8152e2ad4e1480829172abb5d7a9.r2.dev/releases/v0.3.4/Popy_0.3.4_aarch64.dmg" class="btn btn-primary btn-lg">Download Monk for macOS</a>
     <p>If you've been thinking about context persistence, building in this space, or just want to tell us we're wrong about our approach, <a href="https://cal.com/popy-team/15min" target="_blank" rel="noopener">reach out</a>. We'd love to hear from you.</p>
   </div>
 
@@ -102,13 +102,13 @@
 </div></div></article>
 
 <footer><div class="wrap foot">
-  <a href="index.html" class="brand"><img src="/public/images/logo.png" alt="" class="brand-logo">Popy</a>
+  <a href="index.html" class="brand"><img src="/public/images/logo.png" alt="" class="brand-logo">TealMonk</a>
   <div class="links">
     <div class="col"><h5>Product</h5><a href="meetings.html">Meetings</a><a href="email.html">Email</a><a href="pricing.html">Pricing</a><a href="https://pub-a49d8152e2ad4e1480829172abb5d7a9.r2.dev/releases/v0.3.4/Popy_0.3.4_aarch64.dmg">Download</a></div>
     <div class="col"><h5>Company</h5><a href="support.html">Support</a><a href="blog.html">Blog</a><a href="philosophy.html">Philosophy</a></div>
     <div class="col"><h5>Legal</h5><a href="privacy.html">Privacy</a><a href="tos.html">Terms</a></div>
   </div>
-  <div class="copyright">© 2026 Popy. Local-first, on your Mac.</div>
+  <div class="copyright">© 2026 TealMonk Technology Inc. All rights reserved. · Local-first, on your Mac.</div>
 </div></footer>
 <script src="/js/v3.js"></script>
 </body></html>
