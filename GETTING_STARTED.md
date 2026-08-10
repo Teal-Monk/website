@@ -1,8 +1,8 @@
-# Getting Started with Your Popy Website
+# Getting Started with Your TealMonk Website
 
 ## What's Been Built
 
-Your Popy marketing website is complete and ready to launch! Here's what you have:
+Your TealMonk marketing website is complete and ready to launch! Here's what you have:
 
 ### ✅ Pages Created
 1. **Homepage** (index.html) - Complete landing page with hero, features, and CTAs
@@ -70,8 +70,8 @@ Add Google Analytics, Plausible, or Fathom if you want to track visitors.
 
 ### Option 1: Netlify (Recommended - Free)
 1. Create account at netlify.com
-2. Drag and drop your `Popy_Website` folder
-3. Done! You'll get a URL like `popy.netlify.app`
+2. Drag and drop your `tealmonk_website` folder
+3. Done! You'll get a URL like `tealmonk.netlify.app`
 4. Add custom domain if you have one
 
 ### Option 2: Vercel (Free)
@@ -83,7 +83,7 @@ Add Google Analytics, Plausible, or Fathom if you want to track visitors.
 1. Create a GitHub repository
 2. Upload your files
 3. Enable GitHub Pages in settings
-4. Your site will be at `username.github.io/popy-website`
+4. Your site will be at `username.github.io/tealmonk-website`
 
 ### Option 4: Traditional Hosting
 Upload all files via FTP to any web host (GoDaddy, Bluehost, etc.)
@@ -91,7 +91,7 @@ Upload all files via FTP to any web host (GoDaddy, Bluehost, etc.)
 ## File Structure Reference
 
 ```
-Popy_Website/
+tealmonk_website/
 ├── index.html           ← Homepage
 ├── manifesto.html       ← Manifesto page
 ├── privacy.html         ← Privacy policy
