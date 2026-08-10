@@ -1,6 +1,6 @@
-# TealMonk Website
+# Popy Website
 
-Marketing website for [TealMonk](https://tealmonk.com) — a local-first productivity app for macOS.
+Marketing website for [Popy](https://popy.app) — a local-first productivity app for macOS.
 
 ## Pages
 
@@ -19,4 +19,4 @@ npx serve
 
 ## Contact
 
-hello@tealmonk.com
+hello@getpopy.com
