@@ -20,6 +20,7 @@
     { "source": "/support", "destination": "/support.html" },
     { "source": "/philosophy", "destination": "/philosophy.html" },
     { "source": "/tos", "destination": "/tos.html" },
-    { "source": "/blog", "destination": "/blog.html" }
+    { "source": "/blog", "destination": "/blog.html" },
+    { "source": "/blog-umami-ai-tooling", "destination": "/blog-umami-ai-tooling.html" }
   ]
 }
