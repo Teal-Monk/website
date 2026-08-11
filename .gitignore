@@ -26,3 +26,6 @@ package-lock.json
 # Build artifacts
 dist/
 .cache/
+
+# Design-review screenshots (local only)
+screenshots/
